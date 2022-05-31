@@ -1,0 +1,106 @@
+/* The 'color' modifier would be 'red', 'green', 'blue', etc. */
+
+:root {
+  --color: rgba(0, 143, 143, 1);
+  --color-tint: rgba(0, 190, 190, 1);
+  --color-shade: rgba(0, 96, 96, 1);
+}
+
+.label--color {
+  color: var(--color);
+}
+
+.label--color:hover,
+.label--color:focus,
+.label--color:active {
+  color: var(--color-tint);
+}
+
+.button--color {
+  color: var(--white);
+  background: var(--color);
+  border-color: var(--color);
+}
+
+.button--color:hover,
+.button--color:focus,
+.button--color:active {
+  color: var(--white);
+  background: var(--color-tint);
+  border-color: var(--color-tint);
+}
+
+.input--color,
+.textarea--color {
+  color: var(--color);
+  background: var(--white);
+  border-color: var(--color);
+}
+
+.input--color:hover,
+.input--color:focus,
+.input--color:active,
+.textarea--color:hover,
+.textarea--color:focus,
+.textarea--color:active {
+  border-color: var(--color-tint);
+}
+
+.input--color::placeholder,
+.textarea--color::placeholder {
+  color: var(--color-tint);
+}
+
+.checkbox--color::before,
+.radio--color::before {
+  border-color: var(--color);
+}
+
+.checkbox--color::after,
+.radio--color::after {
+  background: var(--color);
+}
+
+.checkbox--color:hover::before,
+.radio--color:hover::before,
+.checkbox--color:focus::before,
+.radio--color:focus::before,
+.checkbox--color:active::before,
+.radio--color:active::before {
+  border-color: var(--color-tint);
+}
+
+.checkbox--color:hover::after,
+.radio--color:hover::after,
+.checkbox--color:focus::after,
+.radio--color:focus::after,
+.checkbox--color:active::after,
+.radio--color:active::after {
+  background: var(--color-tint);
+}
+
+.select--color {
+  color: var(--color);
+  border-color: var(--color);
+}
+
+.select--color:hover,
+.select--color:focus,
+.select--color:active {
+  border-color: var(--color-tint);
+}
+
+.option--color {
+  color: var(--color);
+}
+
+.option--color:hover,
+.option--color:focus,
+.option--color:active {
+  background: var(--color-tint);
+}
+
+.option--color:checked {
+  background: var(--color)
+    linear-gradient(0deg, var(--color) 0%, var(--color) 100%);
+}
