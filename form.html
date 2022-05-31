@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form</title>
+    <base href="./" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <div class="modal">
+      <h3 class="heading">Form</h3>
+      <form class="form" action="#" method="post">
+        <input type="text" placeholder="Name" class="input input--color" />
+        <textarea
+          placeholder="Content"
+          class="textarea textarea--color"
+        ></textarea>
+        <select class="select select--color">
+          <option
+            disabled
+            selected
+            value="option-01"
+            class="option option--color"
+            >Select option...</option
+          >
+          <option value="option-07" class="option option--color"
+            >Option 01</option
+          >
+          <option value="option-08" class="option option--color"
+            >Option 02</option
+          >
+          <option value="option-09" class="option option--color"
+            >Option 03</option
+          >
+        </select>
+        <select multiple class="select multiple select--color">
+          <option
+            disabled
+            selected
+            value="option-01"
+            class="option option--color"
+            >Select option...</option
+          >
+          <option value="option-07" class="option option--color"
+            >Option 01</option
+          >
+          <option value="option-08" class="option option--color"
+            >Option 02</option
+          >
+          <option value="option-09" class="option option--color"
+            >Option 03</option
+          >
+        </select>
+        <div class="checks">
+          <input
+            checked
+            type="checkbox"
+            id="checkbox-01"
+            name="checkbox-01"
+            class="checkbox checkbox--color"
+          />
+          <label for="checkbox-01" class="label label--color">
+            Checkbox 01
+          </label>
+          <br />
+          <input
+            type="checkbox"
+            id="checkbox-02"
+            name="checkbox-02"
+            class="checkbox checkbox--color"
+          />
+          <label for="checkbox-02" class="label label--color">
+            Checkbox 02
+          </label>
+          <br />
+          <input
+            type="checkbox"
+            id="checkbox-03"
+            name="checkbox-03"
+            class="checkbox checkbox--color"
+          />
+          <label for="checkbox-03" class="label label--color">
+            Checkbox 03
+          </label>
+          <br />
+        </div>
+        <div class="radios">
+          <input
+            checked
+            type="radio"
+            id="radio-01"
+            name="radio"
+            class="radio radio--color"
+          />
+          <label for="radio-01" class="label label--color">
+            Radio 01
+          </label>
+          <br />
+          <input
+            type="radio"
+            id="radio-02"
+            name="radio"
+            class="radio radio--color"
+          />
+          <label for="radio-02" class="label label--color">
+            Radio 02
+          </label>
+          <br />
+          <input
+            type="radio"
+            id="radio-03"
+            name="radio"
+            class="radio radio--color"
+          />
+          <label for="radio-03" class="label label--color">
+            Radio 03
+          </label>
+          <br />
+        </div>
+        <button type="submit" class="button button--color">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
